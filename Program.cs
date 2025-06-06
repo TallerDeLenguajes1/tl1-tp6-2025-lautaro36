@@ -1,4 +1,5 @@
-﻿Console.WriteLine("Ingrese el numero que desea invertir:");
+﻿
+Console.WriteLine("Ingrese el numero que desea invertir:");
 string entrada = Console.ReadLine();
 int numeroAInvertir = 0;
 bool esNumero = int.TryParse(entrada, out numeroAInvertir);
@@ -10,9 +11,9 @@ if (esNumero)
     {
         while (numeroAInvertir > 0)
         {
-            int digito = numeroAInvertir % 10;           // Extraer el último dígito (ej: 123 % 10 = 3)
-            numeroInvertido = (numeroInvertido * 10) + digito; // Construir el número invertido (ej: 0*10+3=3; 3*10+2=32; 32*10+1=321)
-            numeroAInvertir /= 10;                       // Eliminar el último dígito (ej: 123 / 10 = 12)
+            int digito = numeroAInvertir % 10;           // Extraer el último dígito
+            numeroInvertido = (numeroInvertido * 10) + digito; // Construir el número invertido 
+            numeroAInvertir /= 10;                       // Eliminar el último dígito
         }
     }
 }
