@@ -1,4 +1,5 @@
-﻿int bandera = 1;
+﻿using System;
+int bandera = 1;
 
 while (bandera == 1)
 {
