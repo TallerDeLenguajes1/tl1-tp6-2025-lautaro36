@@ -16,6 +16,7 @@ while (bandera == 1)
 
     double primerValor;
     double segundoValor;
+    double resultado;
 
     switch (operacion)
     {
@@ -26,8 +27,10 @@ while (bandera == 1)
             Console.WriteLine("Ingrese el segundo valor:");
             entrada = Console.ReadLine();
             double.TryParse(entrada, out segundoValor);
-            primerValor += segundoValor;
-            Console.WriteLine($"El resultado de la suma es: {primerValor}");
+            //primerValor += segundoValor;
+            resultado= primerValor + segundoValor;
+            //Console.WriteLine($"El resultado de la suma es: {primerValor}");
+            Console.WriteLine($"La suma de {primerValor.ToString()} y {segundoValor.ToString()} es {resultado.toString()}");
             break;
         case 2:
             Console.WriteLine("Ingrese el primer valor:");
@@ -36,8 +39,10 @@ while (bandera == 1)
             Console.WriteLine("Ingrese el segundo valor:");
             entrada = Console.ReadLine();
             double.TryParse(entrada, out segundoValor);
-            primerValor -= segundoValor;
-            Console.WriteLine($"El resultado de la resta es: {primerValor}");
+            //primerValor -= segundoValor;
+            resultado = primerValor - segundoValor;
+            //Console.WriteLine($"El resultado de la resta es: {primerValor}");
+            Console.WriteLine($"La resta de {primerValor.ToString()} menos {segundoValor.ToString()} es {resultado.toString()}");
             break;
         case 3:
             Console.WriteLine("Ingrese el primer valor:");
@@ -46,8 +51,10 @@ while (bandera == 1)
             Console.WriteLine("Ingrese el segundo valor:");
             entrada = Console.ReadLine();
             double.TryParse(entrada, out segundoValor);
-            primerValor *= segundoValor;
-            Console.WriteLine($"El resultado del producto es: {primerValor}");
+            //primerValor *= segundoValor;
+            resultado= primerValor * segundoValor;
+            //Console.WriteLine($"El resultado del producto es: {primerValor}");
+            Console.WriteLine($"El producto de {primerValor.ToString()} y {segundoValor.ToString()} es {resultado.toString()}");
             break;
         case 4:
             Console.WriteLine("Ingrese el primer valor:");
@@ -56,8 +63,9 @@ while (bandera == 1)
             Console.WriteLine("Ingrese el segundo valor:");
             entrada = Console.ReadLine();
             double.TryParse(entrada, out segundoValor);
-            primerValor /= segundoValor;
-            Console.WriteLine($"El resultado de la division es: {primerValor}");
+            resultado = primerValor / segundoValor;
+            //Console.WriteLine($"El resultado de la division es: {primerValor}");
+            Console.WriteLine($"La division de {primerValor.ToString()} en {segundoValor.ToString()} es {resultado.toString()}");
             break;
         case 5:
             Console.WriteLine("Ingrese un numero:");
